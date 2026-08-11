@@ -67,8 +67,8 @@ def key(word):
 
 
 def fetch_messages():
-    """Most recent commits authored by USER across public repos."""
-    out = {}
+    """Commits authored by USER, across whatever repos the token can see."""
+    out, dropped, total = {}, 0, None
     for page in range(1, MAX_PAGES + 1):
         q = urllib.parse.urlencode({
             "q": f"author:{USER}", "sort": "author-date",
@@ -88,16 +88,25 @@ def fetch_messages():
         except urllib.error.HTTPError as e:
             print(f"  page {page}: HTTP {e.code} — stopping", file=sys.stderr)
             break
+        if total is None:
+            total = data.get("total_count", 0)
+            print(f"  search index holds {total:,} commits by {USER}")
         items = data.get("items", [])
         for it in items:
             repo = it.get("repository", {}).get("full_name", "")
             if excluded(repo):
+                dropped += 1
                 continue
             out[it["sha"]] = it["commit"]["message"]
-        print(f"  page {page}: {len(items)} commits")
+        print(f"  page {page}: {len(items)}")
         if len(items) < 100:
             break
         time.sleep(2)  # search api is 30 req/min
+    if dropped:
+        print(f"  {dropped} excluded by ZIPF_EXCLUDE")
+    if total and len(out) + dropped < total:
+        print(f"  note: {total - len(out) - dropped:,} not returned "
+              f"(search caps at {MAX_PAGES * 100:,})")
     return out
 
 
@@ -119,9 +128,12 @@ def tally(messages, state):
         labels = {key(w): w for w, c in old.items() if c >= LABEL_MIN}
 
     seen = set(state.get("shas", []))
-    added = 0
+    added = skipped = 0
     for sha, msg in messages.items():
-        if sha in seen or SKIP_MSG.match(msg.strip()):
+        if sha in seen:
+            continue
+        if SKIP_MSG.match(msg.strip()):
+            skipped += 1
             continue
         seen.add(sha)
         words = tokenize(msg)
@@ -130,7 +142,7 @@ def tally(messages, state):
             if counts[key(w)] >= LABEL_MIN:
                 labels[key(w)] = w
         added += 1
-    return counts, labels, seen, added
+    return counts, labels, seen, added, skipped
 
 
 # ---------------------------------------------------------------- fitting
@@ -322,9 +334,13 @@ def main():
             print("no commits found and no saved corpus — nothing to draw", file=sys.stderr)
             return 1
 
-    counts, labels, seen, added = tally(messages, state)
+    counts, labels, seen, added, skipped = tally(messages, state)
     n_commits = state.get("commits", 0) + added
-    print(f"{added} new commits, {sum(counts.values()):,} words, {len(counts):,} unique")
+    print(f"{len(messages):,} fetched · {added:,} new to the corpus · "
+          f"{skipped:,} merge/revert/bump skipped · "
+          f"{len(messages) - added - skipped:,} already counted")
+    print(f"corpus now: {n_commits:,} commits · {sum(counts.values()):,} words · "
+          f"{len(counts):,} unique · {sum(1 for c in counts.values() if c == 1):,} used once")
 
     svg, alpha = render(counts, labels, n_commits)
     OUT.write_text(svg)
