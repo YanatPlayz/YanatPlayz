@@ -50,7 +50,7 @@ INK_LIGHT, INK_DARK = "#1f2328", "#e6edf3"
 WORD = re.compile(r"[a-z][a-z'-]*[a-z]")
 TRAILER = re.compile(r"^(co-authored-by|signed-off-by|reviewed-by|reported-by|"
                      r"cc|refs?|closes|fixes #)\b", re.I)
-NOISE = re.compile(r"https?://\S+|`[^`]*`|\b[0-9a-f]{7,40}\b|\S+\.\w{1,4}\b|\S*[/_@]\S*")
+NOISE = re.compile(r"https?://\S+|`[^`]*`|\b[0-9a-f]{7,40}\b|\S*[/_@]\S*")
 SKIP_MSG = re.compile(r"^(merge|revert|bump|initial commit)\b", re.I)
 
 
