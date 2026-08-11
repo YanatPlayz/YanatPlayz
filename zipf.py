@@ -21,7 +21,15 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+def repo_root():
+    """Walk up from this file to the checkout, wherever the script was put."""
+    for d in pathlib.Path(__file__).resolve().parents:
+        if (d / ".git").exists():
+            return d
+    return pathlib.Path.cwd()
+
+
+ROOT = repo_root()
 STATE = ROOT / "data" / "counts.json"
 OUT = ROOT / "zipf.svg"
 
@@ -275,7 +283,7 @@ def main():
             "shas": sorted(seen),
             "counts": dict(sorted(counts.items(), key=lambda kv: -kv[1])),
         }, indent=0))
-    print(f"wrote {OUT.name} · exponent {alpha:.3f}")
+    print(f"wrote {OUT} · exponent {alpha:.3f}")
     return 0
 
 
