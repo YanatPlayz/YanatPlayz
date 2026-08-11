@@ -153,8 +153,8 @@ def render(counts, labels, n_commits):
     freqs = [c for _, c in ranked]
     alpha = fit_slope(range(1, len(freqs) + 1), freqs)
 
-    W, H = 600, 340
-    L, R, T, B = 52, 22, 34, 52
+    W, H = 600, 300
+    L, R, T, B = 52, 22, 28, 22
     pw, ph = W - L - R, H - T - B
     # axes run to the data, not to the next decade, so nothing sits empty
     xmax = math.log10(len(ranked)) + .04
@@ -166,63 +166,85 @@ def render(counts, labels, n_commits):
     def py(freq):
         return T + ph - math.log10(freq) / ymax * ph
 
+    def along(x1, y1, x2, y2, text, cls):
+        """Set a label on its own line, rotated to match and nudged above it."""
+        ang = math.degrees(math.atan2(y2 - y1, x2 - x1))
+        rad = math.radians(ang)
+        ax = x1 + (x2 - x1) * .98 + math.sin(rad) * 7
+        ay = y1 + (y2 - y1) * .98 - math.cos(rad) * 7
+        return (f'<text class="{cls}" x="{ax:.1f}" y="{ay:.1f}" text-anchor="end" '
+                f'transform="rotate({ang:.2f} {ax:.1f} {ay:.1f})">{text}</text>')
+
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
          f'width="{W}" height="{H}" role="img" aria-label="Log-log plot of word '
          f'frequency against rank in my commit messages, fitted exponent '
-         f'{alpha:.2f}">']
+         f'{alpha:.2f} against a 1/rank reference line">']
 
     s.append(f"""<style>
 text{{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;fill:{INK_LIGHT}}}
 .grid{{stroke:{INK_LIGHT};stroke-width:1;opacity:.12}}
-.dot{{fill:{INK_LIGHT};opacity:.5}}
-.ideal{{stroke:{INK_LIGHT};stroke-width:1.25;stroke-dasharray:4 4;fill:none;opacity:.35}}
+.dot{{fill:{INK_LIGHT}}}
+.ideal{{stroke:{INK_LIGHT};stroke-width:1.25;stroke-dasharray:4 4;fill:none;opacity:.3}}
 .fit{{stroke:{INK_LIGHT};stroke-width:1.75;fill:none;opacity:.9}}
 .tick{{font-size:10px;opacity:.45}}
 .lbl{{font-size:10.5px;opacity:.85}}
-.cap{{font-size:11px;opacity:.55}}
-.eyebrow{{font-size:10px;opacity:.4;letter-spacing:.08em}}
+.note{{font-size:10px;opacity:.4}}
+.note-fit{{font-size:10.5px;opacity:.75}}
 @media (prefers-color-scheme:dark){{
 text{{fill:{INK_DARK}}}.grid,.ideal,.fit{{stroke:{INK_DARK}}}.dot{{fill:{INK_DARK}}}}}
 .dot{{opacity:0;animation:rise .5s ease-out forwards}}
-@keyframes rise{{from{{opacity:0;transform:translate(0,7px)}}to{{opacity:.5;transform:translate(0,0)}}}}
+.once{{animation-name:riseOnce}}
+@keyframes rise{{from{{opacity:0;transform:translate(0,7px)}}to{{opacity:.55;transform:translate(0,0)}}}}
+@keyframes riseOnce{{from{{opacity:0;transform:translate(0,7px)}}to{{opacity:.2;transform:translate(0,0)}}}}
 {''.join(f'.b{i}{{animation-delay:{i*0.075:.3f}s}}' for i in range(1, 12))}
 .ideal,.fit{{stroke-dashoffset:0;animation:draw 1.1s .55s ease-out backwards}}
 @keyframes draw{{from{{stroke-dashoffset:{pw*1.6:.0f}}}to{{stroke-dashoffset:0}}}}
 .fit{{stroke-dasharray:{pw*1.6:.0f}}}
 @media (prefers-reduced-motion:reduce){{
-.dot{{opacity:.5;animation:none}}.ideal,.fit{{animation:none}}
-.fit{{stroke-dasharray:none}}}}
+.dot{{opacity:.55;animation:none}}.once{{opacity:.2}}
+.ideal,.fit{{animation:none}}.fit{{stroke-dasharray:none}}}}
 </style>""")
 
-    # grid + ticks
+    # decade grid: vertical lines keep the log rhythm legible without labels,
+    # only the y axis is numbered
     for d in range(int(xmax) + 1):
         x = L + d / xmax * pw
         s.append(f'<line class="grid" x1="{x:.1f}" y1="{T}" x2="{x:.1f}" y2="{T+ph}"/>')
-        s.append(f'<text class="tick" x="{x:.1f}" y="{T+ph+16}" text-anchor="middle">'
-                 f'{10**d:,}</text>')
     for d in range(int(ymax) + 1):
         y = T + ph - d / ymax * ph
         s.append(f'<line class="grid" x1="{L}" y1="{y:.1f}" x2="{L+pw}" y2="{y:.1f}"/>')
         s.append(f'<text class="tick" x="{L-8}" y="{y+3.5:.1f}" text-anchor="end">'
                  f'{10**d:,}</text>')
 
-    # the two lines: pure 1/rank, and the actual fit
-    top = freqs[0]
-    last = len(ranked)
-    s.append(f'<path class="ideal" d="M{px(1):.1f} {py(top):.1f} '
-             f'L{px(last):.1f} {py(max(top/last, 1)):.1f}"/>')
-    fit_end = 10 ** (math.log10(top) - alpha * math.log10(last))
-    s.append(f'<path class="fit" d="M{px(1):.1f} {py(top):.1f} '
-             f'L{px(last):.1f} {py(max(fit_end, 1)):.1f}"/>')
+    # the two lines: pure 1/rank, and the actual fit, each labelled in place
+    top, last = freqs[0], len(ranked)
 
-    # points, bucketed into 12 bands so the stagger costs 11 css rules
+    def endpoint(exponent):
+        """Stop a line where it hits a count of 1 rather than piling both
+        lines into the same bottom corner on a short corpus."""
+        if exponent <= 0:
+            return px(last), py(max(top * last ** -exponent, 1))
+        r = min(float(last), max(top ** (1 / exponent), 1.0))
+        return px(r), py(max(top * r ** -exponent, 1))
+
+    x1, y1 = px(1), py(top)
+    ix, iy = endpoint(1.0)
+    fx, fy = endpoint(alpha)
+    s.append(f'<path class="ideal" d="M{x1:.1f} {y1:.1f} L{ix:.1f} {iy:.1f}"/>')
+    s.append(f'<path class="fit" d="M{x1:.1f} {y1:.1f} L{fx:.1f} {fy:.1f}"/>')
+    s.append(along(x1, y1, ix, iy, "1/rank", "note"))
+    s.append(along(x1, y1, fx, fy, f"&#945; = {alpha:.2f}", "note-fit"))
+
+    # points, bucketed into 12 bands so the stagger costs 11 css rules.
+    # words used exactly once are half the vocabulary and the least interesting
+    # half, so they sit back and let the head of the distribution read first
     pts = ranked[:MAX_POINTS]
     for i, (_, c) in enumerate(pts):
         band = min(11, int(12 * i / len(pts)))
-        s.append(f'<circle class="dot b{band}" cx="{px(i+1):.1f}" '
-                 f'cy="{py(c):.1f}" r="2.1"/>')
+        once = " once" if c == 1 else ""
+        s.append(f'<circle class="dot{once} b{band}" cx="{px(i+1):.1f}" '
+                 f'cy="{py(c):.1f}" r="{1.6 if c == 1 else 2.1}"/>')
 
-    # label a few words to show the 1/rank fall-off
     for rank in (1, 2, 3, 10, 100, 1000):
         if rank > len(ranked):
             continue
@@ -233,11 +255,6 @@ text{{fill:{INK_DARK}}}.grid,.ideal,.fit{{stroke:{INK_DARK}}}.dot{{fill:{INK_DAR
         s.append(f'<text class="lbl" x="{px(rank)+7:.1f}" y="{py(c)-6:.1f}">'
                  f'{w} <tspan class="tick">{c}</tspan></text>')
 
-    s.append(f'<text class="eyebrow" x="{L}" y="16">WORDS IN MY COMMIT MESSAGES, BY RANK</text>')
-    s.append(f'<text class="cap" x="{L}" y="{H-16}">'
-             f'{sum(counts.values()):,} words · {len(ranked):,} unique · '
-             f'{n_commits:,} commits · fitted exponent {alpha:.2f} '
-             f'(dashed: exactly 1/rank)</text>')
     s.append("</svg>")
     return "\n".join(s), alpha
 
