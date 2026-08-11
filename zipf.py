@@ -9,6 +9,8 @@ data/counts.json, so the corpus grows with every push instead of resetting.
 """
 
 import collections
+import fnmatch
+import hashlib
 import json
 import math
 import os
@@ -34,7 +36,13 @@ STATE = ROOT / "data" / "counts.json"
 OUT = ROOT / "zipf.svg"
 
 USER = os.environ.get("GH_USER", "tanayagrawal")
-TOKEN = os.environ.get("GITHUB_TOKEN", "")
+# ZIPF_TOKEN is a PAT that can see private repos; GITHUB_TOKEN sees public only
+TOKEN = os.environ.get("ZIPF_TOKEN") or os.environ.get("GITHUB_TOKEN", "")
+# repos to leave out entirely, e.g. "work-*,client/secret-thing"
+EXCLUDE = [p.strip() for p in os.environ.get("ZIPF_EXCLUDE", "").split(",") if p.strip()]
+# a word is only ever shown in plaintext once it is this common; rarer words
+# are stored as hashes, so private codenames never land in a public file
+LABEL_MIN = int(os.environ.get("ZIPF_LABEL_MIN", "4"))
 MAX_PAGES = 10          # search caps at 1000 results
 MAX_POINTS = 1200       # keep the svg small
 INK_LIGHT, INK_DARK = "#1f2328", "#e6edf3"
@@ -47,6 +55,16 @@ SKIP_MSG = re.compile(r"^(merge|revert|bump|initial commit)\b", re.I)
 
 
 # ---------------------------------------------------------------- fetching
+
+def excluded(full_name):
+    name = full_name.split("/")[-1]
+    return any(fnmatch.fnmatch(full_name, p) or fnmatch.fnmatch(name, p)
+               for p in EXCLUDE)
+
+
+def key(word):
+    return hashlib.blake2s(word.encode(), digest_size=6).hexdigest()
+
 
 def fetch_messages():
     """Most recent commits authored by USER across public repos."""
@@ -72,6 +90,9 @@ def fetch_messages():
             break
         items = data.get("items", [])
         for it in items:
+            repo = it.get("repository", {}).get("full_name", "")
+            if excluded(repo):
+                continue
             out[it["sha"]] = it["commit"]["message"]
         print(f"  page {page}: {len(items)} commits")
         if len(items) < 100:
@@ -89,16 +110,27 @@ def tokenize(message):
 
 
 def tally(messages, state):
-    counts = collections.Counter(state.get("counts", {}))
+    if state.get("version") == 2:
+        counts = collections.Counter(state.get("counts", {}))
+        labels = dict(state.get("labels", {}))
+    else:  # migrate a v1 plaintext file
+        old = state.get("counts", {})
+        counts = collections.Counter({key(w): c for w, c in old.items()})
+        labels = {key(w): w for w, c in old.items() if c >= LABEL_MIN}
+
     seen = set(state.get("shas", []))
     added = 0
     for sha, msg in messages.items():
         if sha in seen or SKIP_MSG.match(msg.strip()):
             continue
         seen.add(sha)
-        counts.update(tokenize(msg))
+        words = tokenize(msg)
+        counts.update(key(w) for w in words)
+        for w in set(words):                    # promote once it is common
+            if counts[key(w)] >= LABEL_MIN:
+                labels[key(w)] = w
         added += 1
-    return counts, seen, added
+    return counts, labels, seen, added
 
 
 # ---------------------------------------------------------------- fitting
@@ -116,7 +148,7 @@ def fit_slope(ranks, freqs):
 
 # ---------------------------------------------------------------- rendering
 
-def render(counts, n_commits):
+def render(counts, labels, n_commits):
     ranked = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
     freqs = [c for _, c in ranked]
     alpha = fit_slope(range(1, len(freqs) + 1), freqs)
@@ -194,7 +226,10 @@ text{{fill:{INK_DARK}}}.grid,.ideal,.fit{{stroke:{INK_DARK}}}.dot{{fill:{INK_DAR
     for rank in (1, 2, 3, 10, 100, 1000):
         if rank > len(ranked):
             continue
-        w, c = ranked[rank - 1]
+        k, c = ranked[rank - 1]
+        w = labels.get(k)
+        if not w:
+            continue
         s.append(f'<text class="lbl" x="{px(rank)+7:.1f}" y="{py(c)-6:.1f}">'
                  f'{w} <tspan class="tick">{c}</tspan></text>')
 
@@ -270,18 +305,20 @@ def main():
             print("no commits found and no saved corpus — nothing to draw", file=sys.stderr)
             return 1
 
-    counts, seen, added = tally(messages, state)
+    counts, labels, seen, added = tally(messages, state)
     n_commits = state.get("commits", 0) + added
     print(f"{added} new commits, {sum(counts.values()):,} words, {len(counts):,} unique")
 
-    svg, alpha = render(counts, n_commits)
+    svg, alpha = render(counts, labels, n_commits)
     OUT.write_text(svg)
     if not demo:
         STATE.parent.mkdir(exist_ok=True)
         STATE.write_text(json.dumps({
+            "version": 2,
             "commits": n_commits,
             "shas": sorted(seen),
             "counts": dict(sorted(counts.items(), key=lambda kv: -kv[1])),
+            "labels": labels,
         }, indent=0))
     print(f"wrote {OUT} · exponent {alpha:.3f}")
     return 0
