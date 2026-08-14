@@ -29,6 +29,7 @@ jobs:
           GH_USER: ${{ github.repository_owner }}
           ZIPF_EXCLUDE: ""                        # e.g. "work-*,client/*"
           ZIPF_LABEL_MIN: "4"                     # min uses before a word is named
+          ZIPF_ALL_BRANCHES: "1"                  # "0" = default branch only
         run: python zipf.py    # change to scripts/zipf.py if you move it
 
       - name: Commit if the plot moved
