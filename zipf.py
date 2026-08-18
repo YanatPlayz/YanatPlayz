@@ -35,7 +35,7 @@ ROOT = repo_root()
 STATE = ROOT / "data" / "counts.json"
 OUT = ROOT / "zipf.svg"
 
-USER = os.environ.get("GH_USER", "tanayagrawal")
+USER = os.environ.get("GH_USER", "YanatPlayz")
 # ZIPF_TOKEN is a PAT that can see private repos; GITHUB_TOKEN sees public only
 PAT = os.environ.get("ZIPF_TOKEN", "")
 TOKEN = PAT or os.environ.get("GITHUB_TOKEN", "")
@@ -225,15 +225,18 @@ def tally(messages, state):
 
 # ---------------------------------------------------------------- fitting
 
-def fit_slope(ranks, freqs):
-    """Least squares on log10(freq) ~ a + b*log10(rank). Returns -b."""
+def fit_line(ranks, freqs):
+    """Least squares on log10(freq) ~ c - a*log10(rank).
+    Returns (a, c): the exponent and the intercept.
+    """
     xs = [math.log10(r) for r in ranks]
     ys = [math.log10(f) for f in freqs]
     n = len(xs)
     mx, my = sum(xs) / n, sum(ys) / n
     num = sum((x - mx) * (y - my) for x, y in zip(xs, ys))
     den = sum((x - mx) ** 2 for x in xs)
-    return -(num / den) if den else 0.0
+    slope = (num / den) if den else 0.0
+    return -slope, my - slope * mx
 
 
 # ---------------------------------------------------------------- rendering
@@ -241,7 +244,7 @@ def fit_slope(ranks, freqs):
 def render(counts, labels, n_commits):
     ranked = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
     freqs = [c for _, c in ranked]
-    alpha = fit_slope(range(1, len(freqs) + 1), freqs)
+    alpha, c = fit_line(range(1, len(freqs) + 1), freqs)
 
     W, H = 600, 300
     L, R, T, B = 52, 22, 28, 22
@@ -306,24 +309,45 @@ text{{fill:{INK_DARK}}}.grid,.ideal,.fit{{stroke:{INK_DARK}}}.dot{{fill:{INK_DAR
         s.append(f'<text class="tick" x="{L-8}" y="{y+3.5:.1f}" text-anchor="end">'
                  f'{10**d:,}</text>')
 
-    # the two lines: pure 1/rank, and the actual fit, each labelled in place
+    # the two lines: pure 1/rank, and the actual fitted regression
     top, last = freqs[0], len(ranked)
 
-    def endpoint(exponent):
-        """Stop a line where it hits a count of 1 rather than piling both
-        lines into the same bottom corner on a short corpus."""
-        if exponent <= 0:
-            return px(last), py(max(top * last ** -exponent, 1))
-        r = min(float(last), max(top ** (1 / exponent), 1.0))
-        return px(r), py(max(top * r ** -exponent, 1))
+    def line(exponent, intercept):
+        """y = 10**intercept * rank**-exponent, stopped at y=1."""
+        def at(r):
+            return 10 ** (intercept - exponent * math.log10(r))
 
-    x1, y1 = px(1), py(top)
-    ix, iy = endpoint(1.0)
-    fx, fy = endpoint(alpha)
-    s.append(f'<path class="ideal" d="M{x1:.1f} {y1:.1f} L{ix:.1f} {iy:.1f}"/>')
-    s.append(f'<path class="fit" d="M{x1:.1f} {y1:.1f} L{fx:.1f} {fy:.1f}"/>')
+        r_end = float(last)
+
+        if exponent > 0 and at(r_end) < 1:
+            r_end = min(
+                r_end,
+                max(10 ** (intercept / exponent), 1.0)
+            )
+
+        return (
+            (px(1), py(max(at(1), 1))),
+            (px(r_end), py(max(at(r_end), 1)))
+        )
+
+    # Reference: exactly 1/rank, anchored at the top word.
+    (x1, y1), (ix, iy) = line(1.0, math.log10(top))
+
+    # Actual least-squares fit, with its own intercept.
+    (fx0, fy0), (fx, fy) = line(alpha, c)
+
+    s.append(
+        f'<path class="ideal" d="M{x1:.1f} {y1:.1f} '
+        f'L{ix:.1f} {iy:.1f}"/>'
+    )
+
+    s.append(
+        f'<path class="fit" d="M{fx0:.1f} {fy0:.1f} '
+        f'L{fx:.1f} {fy:.1f}"/>'
+    )
+
     s.append(along(x1, y1, ix, iy, "1/rank", "note"))
-    s.append(along(x1, y1, fx, fy, f"&#945; = {alpha:.2f}", "note-fit"))
+    s.append(along(fx0, fy0, fx, fy, f"&#945; = {alpha:.2f}", "note-fit"))
 
     # points, bucketed into 12 bands so the stagger costs 11 css rules.
     # words used exactly once are half the vocabulary and the least interesting
