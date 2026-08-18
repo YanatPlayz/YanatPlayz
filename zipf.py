@@ -46,6 +46,8 @@ EXCLUDE = [p.strip() for p in os.environ.get("ZIPF_EXCLUDE", "").split(",") if p
 LABEL_MIN = int(os.environ.get("ZIPF_LABEL_MIN", "4"))
 # also read non-default branches — costs one extra call per repo
 ALL_BRANCHES = os.environ.get("ZIPF_ALL_BRANCHES", "1") != "0"
+# repos to read even if enumeration misses them, e.g. "HarkerDev/parking,Org/thing"
+EXTRA_REPOS = [r.strip() for r in os.environ.get("ZIPF_REPOS", "").split(",") if r.strip()]
 MAX_BRANCHES = 20
 MAX_PAGES = 10          # 1000 commits per repo, and search caps there too
 MAX_POINTS = 1200       # keep the svg small
@@ -105,19 +107,33 @@ def paged(path, cap=10, **params):
 
 
 def list_repos():
-    """Every repo we can see. /user/repos needs a PAT and includes private."""
+    """Every repo we can see: personal, collaborator, and org-member."""
     repos, seen = [], set()
-    sources = ([("/user/repos", {"affiliation": "owner,collaborator",
-                                 "sort": "pushed"})] if PAT else [])
-    sources.append((f"/users/{USER}/repos", {"sort": "pushed"}))
-    for path, params in sources:
-        for r in paged(path, **params):
+
+    def take(items):
+        for r in items:
             full = r.get("full_name", "")
             if full and full not in seen and not r.get("fork"):
                 seen.add(full)
                 repos.append(full)
-        if repos and path == "/user/repos":
-            break                               # PAT view is a superset
+
+    if PAT:
+        # organization_member is the one that catches org repos you did not
+        # create and were never added to individually
+        take(paged("/user/repos", sort="pushed",
+                   affiliation="owner,collaborator,organization_member"))
+        # belt and braces: walk the orgs directly, since affiliation can miss
+        # repos granted through a team rather than to you personally
+        for org in paged("/user/orgs", cap=2):
+            login = org.get("login")
+            if login:
+                take(paged(f"/orgs/{login}/repos", type="all", sort="pushed"))
+    else:
+        take(paged(f"/users/{USER}/repos", sort="pushed"))
+
+    # anything the API still will not surface can be named outright
+    take({"full_name": r} for r in EXTRA_REPOS)
+
     return [r for r in repos if not excluded(r)]
 
 
@@ -126,6 +142,7 @@ def fetch_via_repos():
     out = {}
     repos = list_repos()
     print(f"  {len(repos)} repos visible")
+    unreachable = []
     for full in repos:
         before = len(out)
         # the default branch, plus any other branches (commits only live on
@@ -142,6 +159,11 @@ def fetch_via_repos():
                     out[c["sha"]] = msg
         if len(out) > before:
             print(f"    {full}: {len(out) - before}")
+        elif full in EXTRA_REPOS:
+            unreachable.append(full)
+    if unreachable:
+        print(f"  no commits readable in: {', '.join(unreachable)} "
+              f"(token lacks access, or none authored by {USER})", file=sys.stderr)
     return out
 
 
