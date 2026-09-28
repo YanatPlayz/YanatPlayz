@@ -24,312 +24,315 @@ text{fill:#e6edf3}.grid,.ideal,.fit{stroke:#e6edf3}.dot{fill:#e6edf3}}
 .ideal,.fit{animation:none}.fit{stroke-dasharray:none}}
 </style>
 <line class="grid" x1="52.0" y1="28" x2="52.0" y2="278"/>
-<line class="grid" x1="237.8" y1="28" x2="237.8" y2="278"/>
-<line class="grid" x1="423.7" y1="28" x2="423.7" y2="278"/>
+<line class="grid" x1="237.5" y1="28" x2="237.5" y2="278"/>
+<line class="grid" x1="423.1" y1="28" x2="423.1" y2="278"/>
 <line class="grid" x1="52" y1="278.0" x2="578" y2="278.0"/>
 <text class="tick" x="44" y="281.5" text-anchor="end">1</text>
-<line class="grid" x1="52" y1="154.5" x2="578" y2="154.5"/>
-<text class="tick" x="44" y="158.0" text-anchor="end">10</text>
-<line class="grid" x1="52" y1="31.0" x2="578" y2="31.0"/>
-<text class="tick" x="44" y="34.5" text-anchor="end">100</text>
-<path class="ideal" d="M52.0 36.6 L415.2 278.0"/>
-<path class="fit" d="M52.0 39.2 L543.5 278.0"/>
-<text class="note" x="411.8" y="267.3" text-anchor="end" transform="rotate(33.61 411.8 267.3)">1/rank</text>
-<text class="note-fit" x="536.7" y="266.9" text-anchor="end" transform="rotate(25.92 536.7 266.9)">&#945; = 0.73</text>
-<circle class="dot b0" cx="52.0" cy="36.6" r="2.1"/>
-<circle class="dot b0" cx="107.9" cy="69.3" r="2.1"/>
-<circle class="dot b0" cx="140.7" cy="93.8" r="2.1"/>
-<circle class="dot b0" cx="163.9" cy="97.4" r="2.1"/>
-<circle class="dot b0" cx="181.9" cy="105.4" r="2.1"/>
-<circle class="dot b0" cx="196.6" cy="109.8" r="2.1"/>
-<circle class="dot b0" cx="209.1" cy="109.8" r="2.1"/>
-<circle class="dot b0" cx="219.8" cy="114.7" r="2.1"/>
-<circle class="dot b0" cx="229.3" cy="117.3" r="2.1"/>
-<circle class="dot b0" cx="237.8" cy="123.0" r="2.1"/>
-<circle class="dot b0" cx="245.5" cy="129.3" r="2.1"/>
-<circle class="dot b0" cx="252.6" cy="136.4" r="2.1"/>
-<circle class="dot b0" cx="259.0" cy="149.4" r="2.1"/>
-<circle class="dot b0" cx="265.0" cy="154.5" r="2.1"/>
-<circle class="dot b0" cx="270.6" cy="154.5" r="2.1"/>
-<circle class="dot b0" cx="275.8" cy="154.5" r="2.1"/>
-<circle class="dot b0" cx="280.7" cy="154.5" r="2.1"/>
-<circle class="dot b0" cx="285.3" cy="154.5" r="2.1"/>
-<circle class="dot b0" cx="289.7" cy="160.1" r="2.1"/>
-<circle class="dot b0" cx="293.8" cy="160.1" r="2.1"/>
-<circle class="dot b0" cx="297.7" cy="160.1" r="2.1"/>
-<circle class="dot b0" cx="301.5" cy="160.1" r="2.1"/>
-<circle class="dot b0" cx="305.1" cy="160.1" r="2.1"/>
-<circle class="dot b0" cx="308.5" cy="160.1" r="2.1"/>
-<circle class="dot b0" cx="311.8" cy="160.1" r="2.1"/>
-<circle class="dot b0" cx="315.0" cy="166.5" r="2.1"/>
-<circle class="dot b0" cx="318.0" cy="166.5" r="2.1"/>
-<circle class="dot b0" cx="320.9" cy="166.5" r="2.1"/>
-<circle class="dot b0" cx="323.8" cy="173.6" r="2.1"/>
-<circle class="dot b0" cx="326.5" cy="173.6" r="2.1"/>
-<circle class="dot b0" cx="329.2" cy="173.6" r="2.1"/>
-<circle class="dot b0" cx="331.7" cy="173.6" r="2.1"/>
-<circle class="dot b0" cx="334.2" cy="173.6" r="2.1"/>
-<circle class="dot b0" cx="336.6" cy="173.6" r="2.1"/>
-<circle class="dot b0" cx="339.0" cy="173.6" r="2.1"/>
-<circle class="dot b0" cx="341.2" cy="173.6" r="2.1"/>
-<circle class="dot b0" cx="343.4" cy="181.9" r="2.1"/>
-<circle class="dot b0" cx="345.6" cy="181.9" r="2.1"/>
-<circle class="dot b0" cx="347.7" cy="181.9" r="2.1"/>
-<circle class="dot b0" cx="349.7" cy="181.9" r="2.1"/>
-<circle class="dot b0" cx="351.7" cy="181.9" r="2.1"/>
-<circle class="dot b0" cx="353.7" cy="181.9" r="2.1"/>
-<circle class="dot b0" cx="355.6" cy="181.9" r="2.1"/>
-<circle class="dot b0" cx="357.4" cy="181.9" r="2.1"/>
-<circle class="dot b0" cx="359.2" cy="191.7" r="2.1"/>
-<circle class="dot b0" cx="361.0" cy="191.7" r="2.1"/>
-<circle class="dot b0" cx="362.8" cy="191.7" r="2.1"/>
-<circle class="dot b0" cx="364.5" cy="191.7" r="2.1"/>
-<circle class="dot b0" cx="366.1" cy="191.7" r="2.1"/>
-<circle class="dot b0" cx="367.7" cy="191.7" r="2.1"/>
-<circle class="dot b0" cx="369.3" cy="191.7" r="2.1"/>
-<circle class="dot b0" cx="370.9" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="372.5" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="374.0" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="375.4" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="376.9" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="378.3" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="379.7" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="381.1" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="382.5" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="383.8" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="385.1" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="386.4" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="387.7" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="388.9" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="390.2" cy="191.7" r="2.1"/>
-<circle class="dot b1" cx="391.4" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="392.6" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="393.7" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="394.9" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="396.1" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="397.2" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="398.3" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="399.4" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="400.5" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="401.5" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="402.6" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="403.6" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="404.7" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="405.7" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="406.7" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="407.7" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="408.7" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="409.6" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="410.6" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="411.5" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="412.5" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="413.4" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="414.3" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="415.2" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="416.1" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="417.0" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="417.8" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="418.7" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="419.6" cy="203.6" r="2.1"/>
-<circle class="dot b1" cx="420.4" cy="219.1" r="2.1"/>
-<circle class="dot b1" cx="421.2" cy="219.1" r="2.1"/>
-<circle class="dot b1" cx="422.1" cy="219.1" r="2.1"/>
-<circle class="dot b1" cx="422.9" cy="219.1" r="2.1"/>
-<circle class="dot b1" cx="423.7" cy="219.1" r="2.1"/>
-<circle class="dot b1" cx="424.5" cy="219.1" r="2.1"/>
-<circle class="dot b1" cx="425.3" cy="219.1" r="2.1"/>
-<circle class="dot b1" cx="426.1" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="426.9" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="427.6" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="428.4" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="429.2" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="429.9" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="430.6" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="431.4" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="432.1" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="432.8" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="433.6" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="434.3" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="435.0" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="435.7" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="436.4" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="437.1" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="437.7" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="438.4" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="439.1" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="439.7" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="440.4" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="441.1" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="441.7" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="442.3" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="443.0" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="443.6" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="444.2" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="444.9" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="445.5" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="446.1" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="446.7" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="447.3" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="447.9" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="448.5" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="449.1" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="449.7" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="450.3" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="450.9" cy="219.1" r="2.1"/>
-<circle class="dot b2" cx="451.4" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="452.0" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="452.6" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="453.1" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="453.7" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="454.2" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="454.8" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="455.3" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="455.9" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="456.4" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="457.0" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="457.5" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="458.0" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="458.5" cy="240.8" r="2.1"/>
-<circle class="dot b2" cx="459.1" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="459.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="460.1" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="460.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="461.1" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="461.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="462.1" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="462.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="463.1" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="463.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="464.1" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="464.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="465.1" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="465.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="466.0" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="466.5" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="467.0" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="467.5" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="467.9" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="468.4" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="468.9" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="469.3" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="469.8" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="470.2" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="470.7" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="471.1" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="471.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="472.0" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="472.5" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="472.9" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="473.3" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="473.8" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="474.2" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="474.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="475.1" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="475.5" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="475.9" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="476.3" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="476.8" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="477.2" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="477.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="478.0" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="478.4" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="478.8" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="479.2" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="479.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="480.0" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="480.4" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="480.8" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="481.2" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="481.6" cy="240.8" r="2.1"/>
-<circle class="dot b3" cx="482.0" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="482.4" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="482.8" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="483.2" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="483.6" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="484.0" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="484.3" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="484.7" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="485.1" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="485.5" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="485.9" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="486.2" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="486.6" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="487.0" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="487.3" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="487.7" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="488.1" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="488.4" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="488.8" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="489.1" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="489.5" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="489.9" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="490.2" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="490.6" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="490.9" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="491.3" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="491.6" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="492.0" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="492.3" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="492.7" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="493.0" cy="240.8" r="2.1"/>
-<circle class="dot b4" cx="493.3" cy="240.8" r="2.1"/>
-<circle class="dot once b4" cx="493.7" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="494.0" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="494.4" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="494.7" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="495.0" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="495.4" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="495.7" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="496.0" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="496.3" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="496.7" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="497.0" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="497.3" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="497.6" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="498.0" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="498.3" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="498.6" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="498.9" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="499.2" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="499.6" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="499.9" cy="278.0" r="1.6"/>
-<circle class="dot once b4" cx="500.2" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="500.5" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="500.8" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="501.1" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="501.4" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="501.7" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="502.0" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="502.4" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="502.7" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="503.0" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="503.3" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="503.6" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="503.9" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="504.2" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="504.5" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="504.8" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="505.0" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="505.3" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="505.6" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="505.9" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="506.2" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="506.5" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="506.8" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="507.1" cy="278.0" r="1.6"/>
+<line class="grid" x1="52" y1="156.2" x2="578" y2="156.2"/>
+<text class="tick" x="44" y="159.7" text-anchor="end">10</text>
+<line class="grid" x1="52" y1="34.4" x2="578" y2="34.4"/>
+<text class="tick" x="44" y="37.9" text-anchor="end">100</text>
+<path class="ideal" d="M52.0 36.5 L419.8 278.0"/>
+<path class="fit" d="M52.0 41.5 L543.7 278.0"/>
+<text class="note" x="416.2" y="267.3" text-anchor="end" transform="rotate(33.29 416.2 267.3)">1/rank</text>
+<text class="note-fit" x="536.9" y="267.0" text-anchor="end" transform="rotate(25.69 536.9 267.0)">&#945; = 0.73</text>
+<circle class="dot b0" cx="52.0" cy="36.5" r="2.1"/>
+<circle class="dot b0" cx="107.8" cy="72.1" r="2.1"/>
+<circle class="dot b0" cx="140.5" cy="96.3" r="2.1"/>
+<circle class="dot b0" cx="163.7" cy="99.9" r="2.1"/>
+<circle class="dot b0" cx="181.7" cy="107.7" r="2.1"/>
+<circle class="dot b0" cx="196.4" cy="112.1" r="2.1"/>
+<circle class="dot b0" cx="208.8" cy="112.1" r="2.1"/>
+<circle class="dot b0" cx="219.5" cy="116.9" r="2.1"/>
+<circle class="dot b0" cx="229.0" cy="116.9" r="2.1"/>
+<circle class="dot b0" cx="237.5" cy="125.1" r="2.1"/>
+<circle class="dot b0" cx="245.2" cy="131.3" r="2.1"/>
+<circle class="dot b0" cx="252.2" cy="138.4" r="2.1"/>
+<circle class="dot b0" cx="258.7" cy="151.1" r="2.1"/>
+<circle class="dot b0" cx="264.6" cy="156.2" r="2.1"/>
+<circle class="dot b0" cx="270.2" cy="156.2" r="2.1"/>
+<circle class="dot b0" cx="275.4" cy="156.2" r="2.1"/>
+<circle class="dot b0" cx="280.3" cy="156.2" r="2.1"/>
+<circle class="dot b0" cx="284.9" cy="156.2" r="2.1"/>
+<circle class="dot b0" cx="289.2" cy="156.2" r="2.1"/>
+<circle class="dot b0" cx="293.4" cy="161.8" r="2.1"/>
+<circle class="dot b0" cx="297.3" cy="161.8" r="2.1"/>
+<circle class="dot b0" cx="301.1" cy="161.8" r="2.1"/>
+<circle class="dot b0" cx="304.6" cy="161.8" r="2.1"/>
+<circle class="dot b0" cx="308.1" cy="161.8" r="2.1"/>
+<circle class="dot b0" cx="311.4" cy="161.8" r="2.1"/>
+<circle class="dot b0" cx="314.5" cy="168.0" r="2.1"/>
+<circle class="dot b0" cx="317.6" cy="168.0" r="2.1"/>
+<circle class="dot b0" cx="320.5" cy="168.0" r="2.1"/>
+<circle class="dot b0" cx="323.3" cy="168.0" r="2.1"/>
+<circle class="dot b0" cx="326.0" cy="175.1" r="2.1"/>
+<circle class="dot b0" cx="328.7" cy="175.1" r="2.1"/>
+<circle class="dot b0" cx="331.2" cy="175.1" r="2.1"/>
+<circle class="dot b0" cx="333.7" cy="175.1" r="2.1"/>
+<circle class="dot b0" cx="336.1" cy="175.1" r="2.1"/>
+<circle class="dot b0" cx="338.5" cy="175.1" r="2.1"/>
+<circle class="dot b0" cx="340.7" cy="175.1" r="2.1"/>
+<circle class="dot b0" cx="342.9" cy="175.1" r="2.1"/>
+<circle class="dot b0" cx="345.1" cy="183.2" r="2.1"/>
+<circle class="dot b0" cx="347.2" cy="183.2" r="2.1"/>
+<circle class="dot b0" cx="349.2" cy="183.2" r="2.1"/>
+<circle class="dot b0" cx="351.2" cy="183.2" r="2.1"/>
+<circle class="dot b0" cx="353.2" cy="183.2" r="2.1"/>
+<circle class="dot b0" cx="355.1" cy="183.2" r="2.1"/>
+<circle class="dot b0" cx="356.9" cy="183.2" r="2.1"/>
+<circle class="dot b0" cx="358.7" cy="183.2" r="2.1"/>
+<circle class="dot b0" cx="360.5" cy="192.9" r="2.1"/>
+<circle class="dot b0" cx="362.2" cy="192.9" r="2.1"/>
+<circle class="dot b0" cx="363.9" cy="192.9" r="2.1"/>
+<circle class="dot b0" cx="365.6" cy="192.9" r="2.1"/>
+<circle class="dot b0" cx="367.2" cy="192.9" r="2.1"/>
+<circle class="dot b0" cx="368.8" cy="192.9" r="2.1"/>
+<circle class="dot b0" cx="370.4" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="371.9" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="373.4" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="374.9" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="376.3" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="377.8" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="379.2" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="380.5" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="381.9" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="383.2" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="384.5" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="385.8" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="387.1" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="388.3" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="389.6" cy="192.9" r="2.1"/>
+<circle class="dot b1" cx="390.8" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="392.0" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="393.2" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="394.3" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="395.5" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="396.6" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="397.7" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="398.8" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="399.9" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="400.9" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="402.0" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="403.0" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="404.1" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="405.1" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="406.1" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="407.1" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="408.0" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="409.0" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="410.0" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="410.9" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="411.8" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="412.8" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="413.7" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="414.6" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="415.5" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="416.3" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="417.2" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="418.1" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="418.9" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="419.8" cy="204.7" r="2.1"/>
+<circle class="dot b1" cx="420.6" cy="219.9" r="2.1"/>
+<circle class="dot b1" cx="421.4" cy="219.9" r="2.1"/>
+<circle class="dot b1" cx="422.2" cy="219.9" r="2.1"/>
+<circle class="dot b1" cx="423.1" cy="219.9" r="2.1"/>
+<circle class="dot b1" cx="423.9" cy="219.9" r="2.1"/>
+<circle class="dot b1" cx="424.6" cy="219.9" r="2.1"/>
+<circle class="dot b1" cx="425.4" cy="219.9" r="2.1"/>
+<circle class="dot b1" cx="426.2" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="427.0" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="427.7" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="428.5" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="429.3" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="430.0" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="430.7" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="431.5" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="432.2" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="432.9" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="433.6" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="434.3" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="435.0" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="435.7" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="436.4" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="437.1" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="437.7" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="438.4" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="439.1" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="439.7" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="440.4" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="441.0" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="441.7" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="442.3" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="442.9" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="443.6" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="444.2" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="444.8" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="445.4" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="446.0" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="446.6" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="447.2" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="447.8" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="448.4" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="449.0" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="449.6" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="450.2" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="450.7" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="451.3" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="451.9" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="452.4" cy="219.9" r="2.1"/>
+<circle class="dot b2" cx="453.0" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="453.5" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="454.1" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="454.6" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="455.2" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="455.7" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="456.3" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="456.8" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="457.3" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="457.8" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="458.4" cy="241.3" r="2.1"/>
+<circle class="dot b2" cx="458.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="459.4" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="459.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="460.4" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="460.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="461.4" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="461.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="462.4" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="462.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="463.4" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="463.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="464.4" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="464.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="465.3" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="465.8" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="466.3" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="466.7" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="467.2" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="467.7" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="468.1" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="468.6" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="469.1" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="469.5" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="470.0" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="470.4" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="470.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="471.3" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="471.7" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="472.2" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="472.6" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="473.1" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="473.5" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="473.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="474.3" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="474.8" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="475.2" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="475.6" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="476.0" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="476.4" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="476.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="477.3" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="477.7" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="478.1" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="478.5" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="478.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="479.3" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="479.7" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="480.1" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="480.5" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="480.9" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="481.3" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="481.7" cy="241.3" r="2.1"/>
+<circle class="dot b3" cx="482.1" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="482.4" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="482.8" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="483.2" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="483.6" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="484.0" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="484.4" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="484.7" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="485.1" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="485.5" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="485.8" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="486.2" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="486.6" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="486.9" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="487.3" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="487.7" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="488.0" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="488.4" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="488.7" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="489.1" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="489.5" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="489.8" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="490.2" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="490.5" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="490.9" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="491.2" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="491.6" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="491.9" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="492.2" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="492.6" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="492.9" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="493.3" cy="241.3" r="2.1"/>
+<circle class="dot b4" cx="493.6" cy="241.3" r="2.1"/>
+<circle class="dot once b4" cx="493.9" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="494.3" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="494.6" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="494.9" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="495.3" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="495.6" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="495.9" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="496.2" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="496.6" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="496.9" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="497.2" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="497.5" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="497.8" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="498.2" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="498.5" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="498.8" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="499.1" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="499.4" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="499.7" cy="278.0" r="1.6"/>
+<circle class="dot once b4" cx="500.0" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="500.3" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="500.7" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="501.0" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="501.3" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="501.6" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="501.9" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="502.2" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="502.5" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="502.8" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="503.1" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="503.4" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="503.7" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="504.0" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="504.3" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="504.6" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="504.9" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="505.1" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="505.4" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="505.7" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="506.0" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="506.3" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="506.6" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="506.9" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="507.2" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="507.4" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="507.7" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="507.9" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="508.2" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="508.5" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="508.0" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="508.3" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="508.6" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="508.8" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="509.1" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="509.4" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="509.6" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="509.7" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="509.9" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="510.2" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="510.5" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="510.7" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="510.8" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="511.0" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="511.3" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="511.6" cy="278.0" r="1.6"/>
@@ -344,78 +347,79 @@ text{fill:#e6edf3}.grid,.ideal,.fit{stroke:#e6edf3}.dot{fill:#e6edf3}}
 <circle class="dot once b5" cx="514.0" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="514.2" cy="278.0" r="1.6"/>
 <circle class="dot once b5" cx="514.5" cy="278.0" r="1.6"/>
-<circle class="dot once b5" cx="514.8" cy="278.0" r="1.6"/>
+<circle class="dot once b5" cx="514.7" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="515.0" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="515.3" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="515.2" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="515.5" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="515.8" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="516.0" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="516.3" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="516.6" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="516.5" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="516.8" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="517.1" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="517.0" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="517.3" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="517.6" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="517.5" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="517.8" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="518.1" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="518.0" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="518.3" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="518.6" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="518.5" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="518.8" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="519.1" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="519.3" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="519.6" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="519.8" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="520.1" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="520.3" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="519.0" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="519.2" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="519.5" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="519.7" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="520.0" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="520.2" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="520.5" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="520.8" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="521.0" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="521.3" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="521.5" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="521.8" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="522.0" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="522.2" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="522.5" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="522.7" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="522.9" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="523.2" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="523.4" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="523.6" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="523.9" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="524.1" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="524.3" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="524.6" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="524.8" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="525.0" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="525.3" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="525.5" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="525.7" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="520.7" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="520.9" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="521.2" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="521.4" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="521.7" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="521.9" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="522.1" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="522.4" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="522.6" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="522.8" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="523.1" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="523.3" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="523.5" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="523.8" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="524.0" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="524.2" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="524.4" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="524.7" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="524.9" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="525.1" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="525.4" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="525.6" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="525.8" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="526.0" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="526.2" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="526.4" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="526.6" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="526.3" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="526.5" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="526.7" cy="278.0" r="1.6"/>
 <circle class="dot once b6" cx="526.9" cy="278.0" r="1.6"/>
-<circle class="dot once b6" cx="527.1" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="527.3" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="527.5" cy="278.0" r="1.6"/>
+<circle class="dot once b6" cx="527.2" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="527.4" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="527.6" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="527.8" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="528.0" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="528.2" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="528.4" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="528.6" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="528.5" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="528.7" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="528.9" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="529.1" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="529.3" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="529.5" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="529.7" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="529.9" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="529.8" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="530.0" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="530.2" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="530.4" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="530.6" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="530.8" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="531.0" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="531.2" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="531.4" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="531.3" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="531.5" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="531.7" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="531.9" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="532.1" cy="278.0" r="1.6"/>
@@ -427,76 +431,77 @@ text{fill:#e6edf3}.grid,.ideal,.fit{stroke:#e6edf3}.dot{fill:#e6edf3}}
 <circle class="dot once b7" cx="533.3" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="533.5" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="533.7" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="534.0" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="534.2" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="534.4" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="534.6" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="534.8" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="533.9" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="534.1" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="534.3" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="534.5" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="534.7" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="535.0" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="535.2" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="535.4" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="535.6" cy="278.0" r="1.6"/>
 <circle class="dot once b7" cx="535.8" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="536.0" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="536.2" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="536.4" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="536.6" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="536.8" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="537.0" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="537.2" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="537.4" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="537.6" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="537.8" cy="278.0" r="1.6"/>
-<circle class="dot once b7" cx="538.0" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="538.2" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="538.4" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="538.6" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="538.8" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="535.9" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="536.1" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="536.3" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="536.5" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="536.7" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="536.9" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="537.1" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="537.3" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="537.5" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="537.7" cy="278.0" r="1.6"/>
+<circle class="dot once b7" cx="537.9" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="538.1" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="538.3" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="538.5" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="538.7" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="538.9" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="539.1" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="539.3" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="539.5" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="539.7" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="539.9" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="540.1" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="540.3" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="540.5" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="540.7" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="540.9" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="539.4" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="539.6" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="539.8" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="540.0" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="540.2" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="540.4" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="540.6" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="540.8" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="541.0" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="541.2" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="541.4" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="541.6" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="541.8" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="542.0" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="541.1" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="541.3" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="541.5" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="541.7" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="541.9" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="542.1" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="542.2" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="542.4" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="542.5" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="542.7" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="542.9" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="543.1" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="542.6" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="542.8" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="543.0" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="543.2" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="543.3" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="543.5" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="543.6" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="543.8" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="544.0" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="543.7" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="543.9" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="544.1" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="544.2" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="544.4" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="544.6" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="544.7" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="544.9" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="544.8" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="545.0" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="545.1" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="545.3" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="545.4" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="545.6" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="545.5" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="545.7" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="545.8" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="546.0" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="546.2" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="546.3" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="546.4" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="546.5" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="546.7" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="546.9" cy="278.0" r="1.6"/>
-<circle class="dot once b8" cx="547.0" cy="278.0" r="1.6"/>
+<circle class="dot once b8" cx="547.1" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="547.2" cy="278.0" r="1.6"/>
 <circle class="dot once b8" cx="547.4" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="547.6" cy="278.0" r="1.6"/>
@@ -510,61 +515,62 @@ text{fill:#e6edf3}.grid,.ideal,.fit{stroke:#e6edf3}.dot{fill:#e6edf3}}
 <circle class="dot once b9" cx="548.9" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="549.1" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="549.3" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="549.5" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="549.4" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="549.6" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="549.8" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="550.0" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="549.9" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="550.1" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="550.3" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="550.5" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="550.4" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="550.6" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="550.8" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="551.0" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="550.9" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="551.1" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="551.3" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="551.5" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="551.4" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="551.6" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="551.8" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="552.0" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="551.9" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="552.1" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="552.3" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="552.5" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="552.2" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="552.4" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="552.6" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="552.8" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="552.7" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="552.9" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="553.1" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="553.3" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="553.2" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="553.4" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="553.6" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="553.5" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="553.7" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="553.8" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="553.9" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="554.1" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="554.0" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="554.2" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="554.4" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="554.3" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="554.5" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="554.6" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="554.7" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="554.9" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="554.8" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="555.0" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="555.2" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="555.1" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="555.3" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="555.4" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="555.5" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="555.6" cy="278.0" r="1.6"/>
 <circle class="dot once b9" cx="555.7" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="555.8" cy="278.0" r="1.6"/>
-<circle class="dot once b9" cx="556.0" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="556.1" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="556.3" cy="278.0" r="1.6"/>
+<circle class="dot once b9" cx="555.9" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="556.0" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="556.2" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="556.4" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="556.5" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="556.6" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="556.7" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="556.8" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="556.9" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="557.0" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="557.1" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="557.2" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="557.3" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="557.4" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="557.5" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="557.6" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="557.7" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="557.8" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="557.9" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="558.0" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="558.1" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="558.2" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="558.3" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="558.5" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="558.6" cy="278.0" r="1.6"/>
@@ -591,70 +597,71 @@ text{fill:#e6edf3}.grid,.ideal,.fit{stroke:#e6edf3}.dot{fill:#e6edf3}}
 <circle class="dot once b10" cx="561.7" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="561.9" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="562.0" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="562.2" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="562.1" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="562.3" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="562.5" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="562.4" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="562.6" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="562.7" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="562.9" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="563.0" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="563.2" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="563.1" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="563.3" cy="278.0" r="1.6"/>
-<circle class="dot once b10" cx="563.5" cy="278.0" r="1.6"/>
+<circle class="dot once b10" cx="563.4" cy="278.0" r="1.6"/>
 <circle class="dot once b10" cx="563.6" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="563.7" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="563.9" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="563.8" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="564.0" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="564.2" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="564.1" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="564.3" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="564.4" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="564.5" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="564.6" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="564.7" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="564.9" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="564.8" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="565.0" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="565.1" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="565.2" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="565.3" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="565.4" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="565.6" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="565.5" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="565.7" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="565.8" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="565.9" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="566.0" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="566.1" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="566.2" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="566.3" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="566.4" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="566.5" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="566.6" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="566.7" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="566.8" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="566.9" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="567.0" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="567.1" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="567.2" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="567.3" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="567.4" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="567.5" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="567.6" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="567.7" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="567.8" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="567.9" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="568.0" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="568.1" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="568.2" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="568.3" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="568.4" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="568.5" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="568.6" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="568.7" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="568.8" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="568.9" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="569.0" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="569.1" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="569.2" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="569.3" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="569.4" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="569.5" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="569.6" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="569.7" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="569.8" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="569.9" cy="278.0" r="1.6"/>
-<circle class="dot once b11" cx="570.0" cy="278.0" r="1.6"/>
+<circle class="dot once b11" cx="570.1" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="570.2" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="570.3" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="570.4" cy="278.0" r="1.6"/>
 <circle class="dot once b11" cx="570.6" cy="278.0" r="1.6"/>
-<text class="lbl" x="59.0" y="30.6">update <tspan class="tick">90</tspan></text>
-<text class="lbl" x="114.9" y="63.3">fix <tspan class="tick">49</tspan></text>
-<text class="lbl" x="147.7" y="87.8">build <tspan class="tick">31</tspan></text>
-<text class="lbl" x="244.8" y="117.0">and <tspan class="tick">18</tspan></text>
+<text class="lbl" x="59.0" y="30.5">update <tspan class="tick">96</tspan></text>
+<text class="lbl" x="114.8" y="66.1">fix <tspan class="tick">49</tspan></text>
+<text class="lbl" x="147.5" y="90.3">build <tspan class="tick">31</tspan></text>
+<text class="lbl" x="244.5" y="119.1">and <tspan class="tick">18</tspan></text>
 </svg>
